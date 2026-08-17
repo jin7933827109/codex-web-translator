@@ -86,7 +86,8 @@ test("launcher speaks the real Native Messaging wire protocol in mock mode", asy
 
 function runMockNativeHost(request) {
   return new Promise((resolvePromise, rejectPromise) => {
-    const child = spawn(join(root, "native-host", "launch.sh"), [
+    const child = spawn("bash", [
+      join(root, "native-host", "launch.sh"),
       "chrome-extension://emnejkkppjmobchhidfddgedogbkdhcl/",
       "0"
     ], {
