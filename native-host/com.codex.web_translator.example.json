@@ -1,0 +1,9 @@
+{
+  "name": "com.codex.web_translator",
+  "description": "Local Codex bridge for the bilingual webpage translator",
+  "path": "/ABSOLUTE/PATH/TO/native-host/launch.sh",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://emnejkkppjmobchhidfddgedogbkdhcl/"
+  ]
+}
