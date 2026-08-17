@@ -1,0 +1,35 @@
+{
+  "name": "codex-web-translator",
+  "version": "0.1.0",
+  "description": "Unofficial local-first Chrome extension for bilingual webpage translation through the Codex CLI.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jin7933827109/codex-web-translator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jin7933827109/codex-web-translator/issues"
+  },
+  "homepage": "https://github.com/jin7933827109/codex-web-translator#readme",
+  "keywords": [
+    "chrome-extension",
+    "codex",
+    "translation",
+    "bilingual",
+    "native-messaging"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "npm run check && npm test",
+    "extension-id": "node scripts/extension-id.mjs",
+    "install-host": "bash scripts/install-native-host.sh",
+    "uninstall-host": "bash scripts/uninstall-native-host.sh",
+    "demo": "node scripts/serve-demo.mjs"
+  }
+}
