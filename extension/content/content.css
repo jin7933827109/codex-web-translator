@@ -1,0 +1,30 @@
+.codex-web-translator-translation {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: auto !important;
+  margin: 0.42em 0 1em !important;
+  padding: 0.15em 0 0.15em 0.85em !important;
+  border-left: 3px solid #6b7cff !important;
+  color: #53607a !important;
+  background: transparent !important;
+  font: inherit !important;
+  font-size: 0.96em !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  white-space: pre-wrap !important;
+}
+
+.codex-web-translator-translation--inside-list {
+  margin-bottom: 0.45em !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .codex-web-translator-translation {
+    border-left-color: #8f9cff !important;
+    color: #aeb9d1 !important;
+  }
+}
