@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Codex 双语翻译",
+  "version": "0.1.0",
+  "description": "点击后使用本机 Codex 把网页变成原文与译文对照阅读。",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6OGjQVYoAgo7ToQ/1b6+Zeou31TE1AX5sZ/KXVZPPxO03++QqJAdN6qFp5KiHbXDwVatPqbkZ6R4BYRALBXgsR62wnz768xcfUC9A3Clm6nUgBUczbMQ9JvLTGvvVW72bQj/hKwtPs8l6OPpWtzS9XtjLnJOc8U12QdIEGB57oLowSe6rsfwmxeGPToqpZcc27KeodpXz5Y5AnCmASKk6dxf8j8X4LVBh+u2ioglRjAOA2oBqh+W6RsSbadNUOb6E3d5qObj/MRRUwGsnwEXJVmkhX+x4epKjVJUCevj+jRf07eBs8iDYyCiFw4E2OZUoNem8AbFwDq1MHe33q7TPQIDAQAB",
+  "permissions": [
+    "activeTab",
+    "nativeMessaging",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Codex 双语翻译"
+  }
+}
